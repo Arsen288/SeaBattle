@@ -46,6 +46,7 @@ public class Panel extends JPanel{
 		if(game.computerWin()) {
 			int x = game.computerLeftIndent - game.centerIndent + 15;
 			int y =game.topIndent + game.fieldSize * game.cellSize + 50;
+			g.setFont(font);
 			g.drawString("YOU DEAD", x ,y);
 		}else if (game.playerWin()) {
 			int x = game.computerLeftIndent - game.centerIndent / 2 - 50;
