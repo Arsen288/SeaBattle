@@ -106,6 +106,17 @@ public class Field {
 			ships[i].kill(cells);
 		}
 	}
+
+	public boolean isAllDeath() {
+		// TODO Auto-generated method stub
+		int killedShips = 0;
+		for(int i = 0; i < ships.length; i++) {
+			if(ships[i].isKilled(cells)) {
+				killedShips += 1;
+			}
+		}
+		return killedShips == ships.length;
+	}
 	
 	
 
